@@ -24,5 +24,3 @@ While there are existing age and gender estimation models available, a custom/di
 
 ## Data Source: https://www.kaggle.com/datasets/abhikjha/imdb-wiki-faces-dataset
 Note: The data was downloaded from the data source and then uploaded to Google Drive
-
-## Project Board:
