@@ -21,3 +21,8 @@ While there are existing age and gender estimation models available, a custom/di
 5. Domain-specific Requirements: The Surveillance and Security industry might have specific requirements and constraints that generic age and gender estimation models may not meet. A custom solution allows tailoring the technology to address the industry's unique challenges and demands effectively.
 
 6. Integration and Scalability: To implement age and gender estimation in real-world security systems, seamless integration and scalability are essential. A custom solution can be developed to fit into the existing security infrastructure and adapt to varying deployment scales.
+
+## Data Source: https://www.kaggle.com/datasets/abhikjha/imdb-wiki-faces-dataset
+Note: The data was downloaded from the data source and then uploaded to Google Drive
+
+## Project Board:
