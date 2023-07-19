@@ -1,6 +1,6 @@
 ## Age Estimation Model: Analyzing IMDB Faces Dataset
 
-Age and Gender Estimation Model is a Final Project developed by Cecille Jatulan, Maria Melencio, Michael Montanez, David Higuera, and Diana Reyes, students of the Big Data Analytics program at Lambton College.
+Age Estimation Model is a Final Project developed by Cecille Jatulan, Maria Melencio, Michael Montanez, David Higuera, and Diana Reyes, students of the Big Data Analytics program at Lambton College.
 
 ## Introduction:
 The project focuses on analyzing the IMDB Faces Dataset to estimate the age of individuals in the images. The IMDB Faces dataset contains a substantial number of face images collected from the IMDb website, a well-known online movie and TV show database. The dataset includes a wide range of actors and actresses with varying ages, ethnicities, and gender expressions, making it diverse and representative of real-world data. By leveraging machine learning and computer vision techniques, we aim to develop a custom solution that can accurately estimate the age of individuals based on their facial characteristics.
