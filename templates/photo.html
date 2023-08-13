@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Image</title>
+    <style>
+        html {
+            background: #100a1c;
+            background-image:
+                radial-gradient(50% 30% ellipse at center top, #0d535d 0%, rgba(15, 114, 117, 0) 100%),
+                radial-gradient(60% 50% ellipse at center bottom, #196e79 0%, #13444c 100%);
+            background-attachment: fixed;
+            color: #f7fafc;
+        }
+        img {
+            margin-left: 110px;
+            padding: 0;
+            width: 80vw;
+            height: 80vh;
+            border: 2px solid #6cacc5;
+            border-radius: 4px;
+        }
+        button {
+            float: left;
+            background-color: rgb(3, 50, 55);
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        button:hover {
+            background-color: #077a8b;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        /* Center-align the estimated age text */
+        h3 {
+            text-align: center;
+            margin-top: 10px; /* Add some spacing between the image and the age text */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <a href="/"><button>Home</button></a>
+            <br>
+            <h2>Age Estimation</h2>
+        </div>
+        
+        <div class="container">   
+            <img src="{{ uploaded_image }}" width="100%">
+            <h3>Estimated Age: {{ age_prediction }}</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Estimation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/styles/style.css">
+<link rel="stylesheet" href="../static/styles/aj.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg aj-display-container aj-opacity-min" id="home">
+  <div class="aj-display-middle" style="white-space:nowrap;">
+    <span class="aj-center aj-padding-large aj-black aj-xlarge aj-wide aj-animate-opacity">Age<span class="aj-hide-small"> Estimation</span> Model</span>
+  </div>
+</div>
+<br><br><br>
+<div class="action-wrap">
+  <div class="action-html">
+    <input id="tab-2" type="radio" name="tab" class="photo" checked><label for="tab-2" class="tab">Photo</label>
+    <div class="action-form">
+      <div class="photo-htm">
+        <form action="/upload" method="POST" enctype="multipart/form-data" style="color: hwb(120 98% 0%)">
+          <br><br>Select image to upload:<br><br><br>
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <br><br><br><br>
+          <div class="group">
+            <input type="submit" class="button" value="Upload and detect" name="submit">
+          </div>
+        </form>
+        <div class="warning" style="text-align: center;"> <!-- Center-align the warning message -->
+          {% if no_image_warning %}
+          {{ no_image_warning }}
+          {% endif %}
+      </div>
+      </div>      
+  </div>
+</div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="aj-content aj-container aj-padding-64" id="about">
+  <h3 class="aj-center">ABOUT THE PROJECT</h3>
+  <p class="aj-center"><em>Introduction to AI</em></p>
+  <p>We used an ensemble of two custom CNN Model to Estimate the Age of the Image</p>
+</div>
+
+<!-- Footer -->
+<footer class="aj-center aj-black aj-padding-64 aj-opacity aj-hover-opacity-off">
+  <a href="#home" class="aj-button aj-light-grey"><i class="fa fa-arrow-up aj-margin-right"></i>Back to the top</a>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
