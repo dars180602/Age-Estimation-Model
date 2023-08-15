@@ -33,19 +33,30 @@
         </form>
         <div class="warning" style="text-align: center;"> <!-- Center-align the warning message -->
           {% if no_image_warning %}
-          {{ no_image_warning }}
+            {{ no_image_warning }}
           {% endif %}
+          {% if face_detection_warning %}
+            {{ face_detection_warning }}
+          {% endif %}
+        </div>
       </div>
-      </div>      
+    </div>
   </div>
-</div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="aj-content aj-container aj-padding-64" id="about">
   <h3 class="aj-center">ABOUT THE PROJECT</h3>
-  <p class="aj-center"><em>Introduction to AI</em></p>
-  <p>We used an ensemble of two custom CNN Model to Estimate the Age of the Image</p>
+  <p>We utilized a sophisticated stacked ensemble that fuses the predictive abilities of two CNN models, each derived from the VGG Net and Google Net architectures. This system excels in accurately estimating the age of provided images. Our approach strategically leverages the inherent strengths of these renowned architectures, substantially elevating the precision and dependability of age prediction.</p>
+  <p> At the heart of this project lies the core objective of deploying our advanced ensemble model. Its purpose is to predict the age group of individuals depicted within single images.</p>
+  <h3 class="aj-center">UI Features</h3>
+  <ul>
+    <li><strong>Single Face Estimation:</strong> The age estimation UI is designed to estimate the age of a single face in an uploaded image.</li>
+    <li><strong>Notification of Face Detection:</strong> Feedback is provided indicating whether no face was detected or if multiple faces were detected.</li>
+    <li><strong>Upload Alert:</strong> If the "upload" button is clicked without an image being uploaded, an appropriate message will be displayed.</li>
+    <li><strong>Estimated Age Ranges:</strong> Presents an estimated age range based on the detected face, categorized into different groups.</li>
+    <li><strong>Entry Permission:</strong> Determines and indicates whether the person is permitted to enter based on their age group.</li>
+  </ul>
 </div>
 
 <!-- Footer -->
